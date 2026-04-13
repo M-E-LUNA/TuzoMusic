@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-small">TuzoMusic</div>
+            <div class="nav-icons">
+                <a href="/registro" class="nav-item">
+                    <span class="user-icon">👤</span>
+                    <span class="nav-text">Crear Cuenta</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <header>
-        
             <div class="logo-container">
                 <img src="{{ url_for('static', filename='tuzo.png') }}" alt="Tuzo Logo" class="tuzo-img">
             </div>
-            
             <h1 class="logo-text">TuzoMusic</h1>
             <p class="tagline">Tu destino para los mejores vinilos y música clásica</p>
         </header>
 
         <main>
-            
             <a href="#" class="btn-main">Entrar a la Tienda</a>
         </main>
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuzoMusic - Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-card">
+            <a href="/" class="back-link">← Volver al inicio</a>
+            <h2>Únete a TuzoMusic</h2>
+            <p>Crea tu cuenta para comprar vinilos exclusivos</p>
+            
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" name="nombre" placeholder="Ej. lopez coyote" required>
+                </div>
+                <div class="input-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" name="email" placeholder="correo@gmail.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Nombre de Usuario</label>
+                    <input type="text" name="usuario" placeholder="Tuzolove1" required>
+                </div>
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-main">Registrarme</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
