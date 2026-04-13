@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; 
+    color: white;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+
+.tuzo-img {
+    width: 160px; 
+    height: auto;
+    margin-bottom: 20px;
+    
+    filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.6));
+    transition: transform 0.3s ease;
+}
+
+.tuzo-img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Texto, TuzoMusic */
+.logo-text {
+    font-size: 5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    margin-bottom: 40px;
+}
+
+/* Botón */
+.btn-main {
+    display: inline-block;
+    padding: 18px 45px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to right, #8b5cf6, #d946ef);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(217, 70, 239, 0.4);
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(217, 70, 239, 0.7);
+    filter: brightness(1.1);
+}
+
+/* Mensaje del pie */
+.footer-msg {
+    margin-top: 60px;
+    font-size: 0.8rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
